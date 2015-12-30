@@ -27,7 +27,7 @@ features_train, features_test, labels_train, labels_test = preprocess()
 clf = GaussianNB()
 clf.fit(features_train,labels_train)
 predict=clf.predict(features_test)
-From sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score
 Accuracy = accuracy_score(predict, labels_test)
 print(Accuracy)
 
