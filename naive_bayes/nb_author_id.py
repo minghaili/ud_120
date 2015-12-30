@@ -29,7 +29,7 @@ clf.fit(features_train,labels_train)
 predict=clf.predict(features_test)
 From sklearn.metrics import accuracy_score
 Accuracy = accuracy_score(predict, labels_test)
-
+print(Accuracy)
 
 #########################################################
 
